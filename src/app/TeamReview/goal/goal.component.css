@@ -1,0 +1,75 @@
+th{
+    text-align:center;
+ }
+ .action{
+     width: 34%;
+ }
+ .Department,.Degisignation {
+     width: 12%;
+ }
+ 
+ table{
+     margin-bottom: 0%;
+ }
+ .btnExpand ,.btnMoment,.btnSubmit{
+     background-color: darkblue;
+ }
+ 
+ .btnExpand{
+     margin: 10%;
+ 
+ }
+ .btnSubmit{
+     margin: 2%;
+ }
+ .btnMoment{
+ margin-left: 30%;
+ }
+ .tblrow{
+     border: 0px white;
+ }
+ label{
+ margin-left: 20%;
+     
+ }
+ .tblFinance{
+     border:none;
+     border-collapse: collapse;
+     color:  rgb(248, 176, 22);
+     height: 1%;
+ }
+ .thFinance{
+     border-right: 1px solid #000;
+ }
+ .txt{
+     border-left: 2px solid #000;
+     height: 25px;
+     margin:3px;
+     font-size: bold;
+ }
+ .divFinancial{
+     display: flex;
+     color:  rgb(248, 176, 22);
+     margin-left:70%;
+     width: 25%;
+ }
+ .btnPlus{
+     margin: 2%;
+     border: none;
+     color: #000;
+     font-size: larger;
+     
+ }
+ .collapse{
+     width: 120%;
+ }
+
+ .objectivePerformance{
+    background-color: rgba(78, 76, 75, 0.83);
+    color: white;
+    height: 25px;
+    width: 30%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 2%;
+ }
+ 

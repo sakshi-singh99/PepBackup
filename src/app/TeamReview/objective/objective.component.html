@@ -1,0 +1,111 @@
+<div>
+    <table class=" tblobj table table-bordered">
+      <thead class="alert alert-dark">
+        <tr>
+          <th>
+            Objective
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Review
+          </th>
+          <th>
+            StartDate
+          </th>
+          <th>
+            EndDate
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Completed%
+          </th>
+          <th>
+            Action
+          </th>
+          <th>
+            Checkins
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><textarea></textarea></td>
+          <td><textarea></textarea></td>
+          <td><textarea></textarea></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><select id="Type" name="Type" style="width: 100%; appearance: menulist;">
+              <option value="1"> New </option>
+              <option value="2"> In Progress </option>
+              <option value="3"> Completed</option>
+            </select></td>
+          <td><input type="range"></td>
+          <td><i class="material-icons" style="font-size:36px; color: blue;">save</i>
+            <i class="material-icons" style="font-size:36px; color: red;">close</i>
+          </td>
+          <td>
+            <i class="material-icons" style="font-size:36px; color: blue">checkin</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="card">
+      <span class="checkins">Check-ins >></span>
+      <div class="container">
+        <table class="table table-bordered tbldata">
+          <thead class="alert alert-dark">
+            <tr>
+              <th>
+                Checkin No
+              </th>
+              <th>
+                Month
+              </th>
+              <th>
+                Employee Comments
+              </th>
+              <th>
+                Supervisor Comments
+              </th>
+              <th>
+                Completed%
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>July</td>
+              <td><textarea disabled="true"></textarea></td>
+              <td><textarea></textarea></td>
+              <td><input type="range"></td>
+  
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>August</td>
+              <td><textarea disabled="true"></textarea></td>
+              <td><textarea></textarea></td>
+              <td><input type="range"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>September</td>
+              <td><textarea disabled="true"></textarea></td>
+              <td><textarea></textarea></td>
+              <td><input type="range"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-primary btnsave">Save</button>
+        <button class="btncancle btn btn-cancel">Cancle</button>
+      </div>
+    </div>
+    <button class=" btn btn-primary btnadd" click="">
+      <i class="material-icons " style=" color:white;">add</i>
+      Add Objective</button>
+  </div>

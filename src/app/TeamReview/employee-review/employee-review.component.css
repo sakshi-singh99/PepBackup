@@ -1,0 +1,25 @@
+th{
+    text-align:center;
+ }
+ table{
+     margin-bottom: 0%;
+ }
+ .btnExpand ,.btnMoment,.btnSubmit{
+     background-color: darkblue;
+ }
+ .btnSubmit{
+     margin: 2%;
+ }
+ .btnMoment{
+ margin-left: 30%;
+ }
+ .tblrow{
+     border: 0px white;
+ }
+ label{
+ margin-left: 20%;
+     
+ }
+ 
+ 
+ 

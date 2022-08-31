@@ -1,0 +1,38 @@
+
+.tblobj{
+    width:93%;
+
+}
+.card{
+    width: 93%;
+    border: 2px solid grey;
+    padding: 2px;
+}
+.btnsave{
+    margin: 1%;
+    margin-left: 50%;
+}
+
+.btncancel{
+    margin: 1%;
+
+}
+.checkins{
+    color: rgb(246, 170, 6);
+    font-size: larger;
+    font:bolder;
+
+}
+
+.btnadd{
+    color:white;
+    width: 7%;
+    font:bolder;
+    margin:1%;
+    margin-left: 45%;
+
+
+}
+textarea{
+    width: 100%;
+}

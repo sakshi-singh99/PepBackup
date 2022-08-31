@@ -1,0 +1,73 @@
+.container{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.btnSelfReview{
+    background-color: rgb(207, 222, 249);
+    color: #000;
+    padding: 1% 2%;
+    border: none;
+    margin-right: 0.4%;
+}
+.btnTeamReview{
+    background-color:darkblue;
+    color: white; 
+    padding: 1% 2%;
+    border: none; 
+}
+.card{
+    width: 145%;
+    height: 100%;
+}
+.lblFinancialYear{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 3%;
+    
+}
+.colon{
+    margin-right: 9%;
+}
+.card-label{
+    display: flex;
+}
+.lblQuarter{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.lbl{
+    width: 200%;
+}
+.lblType{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.btnSearch{
+    margin-left: 40%;
+    margin-top: 4%;
+}
+.classbtn{
+    background: darkblue;
+}
+
+.export{
+    display: flex;
+}
+.btnExport{
+    background-color: darkblue;
+    color: white;
+    margin-left: 95%;
+    width: 4%;
+
+}
+.tbl{
+margin-top: 4%;
+}
+.card-body{
+    width:100%;
+}

@@ -1,0 +1,40 @@
+<div class="col-md-12 p0 EmployeeReview">
+    <div>
+        <table class="table table-bordered" >
+            <thead class="alert alert-dark" style="text-align:center;">
+              <tr >
+                <th>Employee Name</th>
+                <th >Id</th>
+                <th class="Degisignation">Degisignation</th>
+                <th class="Department" >Department</th>
+                <th >No of Goals</th>
+                <th >Completed%</th>
+                <th >9-Grid Score</th>
+                <th >Reviwer</th>
+                <th >Last Promotion Date</th>
+                <th >Happiness%</th>
+                <th class="action">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of Employee">
+                <td >{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.degisignation}}</td>
+                <td>{{emp.department}}</td>
+                <td>{{emp.goals}}</td>
+                <td>{{emp.completed}}</td>
+                <td>{{emp.score}}</td>
+                <td>{{emp.reviwer}}</td>
+                <td>{{emp.promotion}}</td>
+                <td>{{emp.happiness}}</td>
+
+               <button class="btn btn-primary btnMoment">On The Moment</button>
+               <button class="btn btn-primary btnSubmit">Submit</button>
+              </tr>
+            </tbody>
+          </table>
+          <app-goal></app-goal>
+    </div>
+
+</div>

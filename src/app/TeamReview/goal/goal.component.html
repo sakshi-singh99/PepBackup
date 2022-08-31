@@ -1,0 +1,211 @@
+<table class="table  tblemp">
+    <thead class="table-bordered">
+      <tr>
+        <th scope="col">
+          <span class="objectivePerformance pull-left rounded-pill">Performance Goals</span>
+        </th>
+        <button class="btn btn-primary btnExpand pull-right" data-bs-toggle="collapse"
+          data-bs-target="#collapseFinancial, #collapseOperatinal,#collapseCustomer,#collapseLearning,#collapseOther "
+          aria-expanded="false" (click)="ExpandOnClick()">{{btnExpand}}</button>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="table-bordered">
+      <tr>
+        <td>Financial
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 2%">Weight: </label>
+            <input type="text" style="width:80px; margin: 3%;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus" (click)="plusOnClick()" data-bs-toggle="collapse" data-bs-target="#collapseFinancial" aria-expanded="false"
+              aria-controls="collapseFinancial" >{{btnPlus}}</button>
+          </div>
+          <div class="collapse" id="collapseFinancial">
+            <app-objective></app-objective>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Operatinal
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 80px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus" data-bs-toggle="collapse" data-bs-target="#collapseOperatinal" aria-expanded="false"
+              aria-controls="collapseOperatinal" (click)="plusOnClick()">{{btnPlus}}</button>
+          </div>
+          <div class="collapse" id="collapseOperatinal">
+            <app-objective></app-objective>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Customer
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus" data-bs-toggle="collapse" data-bs-target="#collapseCustomer" aria-expanded="false"
+              aria-controls="collapseCustomer" (click)="plusOnClick()">{{btnPlus}}</button>
+          </div>
+          <div class="collapse" id="collapseCustomer">
+            <app-objective></app-objective>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Learning and Growth
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus" data-bs-toggle="collapse" data-bs-target="#collapseLearning" aria-expanded="false"
+              aria-controls="collapseLearning" (click)="plusOnClick()">{{btnPlus}}</button>
+          </div>
+          <div class="collapse" id="collapseLearning">
+            <app-objective></app-objective>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="tblrow">
+        <td>Other
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false"
+              aria-controls="collapseOther" (click)="plusOnClick()">{{btnPlus}}</button>
+          </div>
+          <div class="collapse" id="collapseOther">
+            <app-objective></app-objective>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    <thead class="table-bordered">
+      <tr>
+        <th scope="col">
+          <span class="objectivePerformance pull-left rounded-pill">Behavioural Goals</span>
+          </th>
+        <button class="btn btn-primary btnExpand">Expand Goals</button>
+  
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="table-bordered">
+      <tr>
+        <td>Financial
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus">+</button>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Operatinal
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus">+</button>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Customer
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus">+</button>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Learning and Growth
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus">+</button>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Other
+          <div class="divFinancial">
+            <label style="color: rgb(248, 176, 22);margin: 6px">Weight: </label>
+            <input type="text" style="width: 90px; margin: 3px;">
+            <div class="txt"></div>
+            <div class="divObjectives col-md-7">Total Objectives:</div>
+            <div class="txt"></div>
+            <div class="divProgress col-md-5">Progresses:</div>
+            <div class="txt"></div>
+            <button class="btnPlus">+</button>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
