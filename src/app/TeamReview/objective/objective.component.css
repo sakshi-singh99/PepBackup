@@ -21,6 +21,7 @@
     color: rgb(246, 170, 6);
     font-size: larger;
     font:bolder;
+    display: flex;
 
 }
 
@@ -35,4 +36,17 @@
 }
 textarea{
     width: 100%;
+}
+.iconsave{
+    cursor: pointer;
+}
+.closeicon{
+
+}
+
+.btnclose{
+    border: none;
+    width: 2%;
+    margin-left: 95%;
+    margin-top:0%;
 }

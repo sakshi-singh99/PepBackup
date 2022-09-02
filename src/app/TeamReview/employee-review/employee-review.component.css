@@ -8,17 +8,22 @@ th{
      background-color: darkblue;
  }
  .btnSubmit{
-     margin: 2%;
+ margin:3%;
+
  }
  .btnMoment{
- margin-left: 30%;
+ margin:3%;
+
  }
  .tblrow{
      border: 0px white;
  }
  label{
  margin-left: 20%;
-     
+ }
+
+ .iconedit{
+    cursor: pointer;
  }
  
  

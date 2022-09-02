@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./objective.component.css']
 })
 export class ObjectiveComponent implements OnInit {
-
+  saveGoal:boolean=true;
+  close:boolean=true;
+  divs: any[] = [];
   constructor() { }
-
+  card: any[] = [];
   ngOnInit(): void {
   }
+  savegoal(){
+    this.saveGoal= true;
+  }
+  closeCheckins(){
+    this.saveGoal=false;
+  }
+  
+  add(): void {
+    this.divs.push(this.divs.length);
+    this.saveGoal=false;
+  }
 
+  
 }

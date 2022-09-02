@@ -3,23 +3,23 @@
         <table class="table table-bordered" >
             <thead class="alert alert-dark" style="text-align:center;">
               <tr >
-                <th>Employee Name</th>
-                <th >Id</th>
-                <th class="Degisignation">Degisignation</th>
-                <th class="Department" >Department</th>
-                <th >No of Goals</th>
-                <th >Completed%</th>
-                <th >9-Grid Score</th>
+                <th class="col-md-1">Employee Name</th>
+                <th class="col-md-0" >Id</th>
+                <th class="col-md-2">Degisignation</th>
+                <th class="col-md-2" >Department</th>
+                <th class="col-md-1">No of Goals</th>
+                <th class="col-md-1">Completed%</th>
+                <th class="col-md-1" >9-Grid Score</th>
                 <th >Reviwer</th>
-                <th >Last Promotion Date</th>
+                <th class="col-md-2" >Last Promotion Date</th>
                 <th >Happiness%</th>
-                <th class="action">Action</th>
+                <th class="col-md-5">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let emp of Employee">
-                <td >{{emp.id}}</td>
-                <td>{{emp.name}}</td>
+                <td >{{emp.name}}</td>
+                <td>{{emp.id}}</td>
                 <td>{{emp.degisignation}}</td>
                 <td>{{emp.department}}</td>
                 <td>{{emp.goals}}</td>
@@ -28,13 +28,13 @@
                 <td>{{emp.reviwer}}</td>
                 <td>{{emp.promotion}}</td>
                 <td>{{emp.happiness}}</td>
-
+                <i class="material-icons iconedit" (click)="editGoal()">mode_edit</i>
                <button class="btn btn-primary btnMoment">On The Moment</button>
                <button class="btn btn-primary btnSubmit">Submit</button>
               </tr>
             </tbody>
           </table>
-          <app-goal></app-goal>
+          <app-goal [hidden]="goaldiv"></app-goal>
     </div>
 
 </div>

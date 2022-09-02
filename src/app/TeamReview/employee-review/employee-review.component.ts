@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import empData from 'src/app/TeamReview/data/empInfo.json'
+import { AuthService } from '../Services/auth.service';
 
 interface Employee {
   name: String;
@@ -53,13 +54,17 @@ export class EmployeeReviewComponent implements OnInit {
 
 
 ] ;
+ goaldiv:boolean=true;
 
-  constructor() {
-console.log(this.Employee);
+  constructor(private auth: AuthService) {
+      console.log(this.Employee);
   }
 
   ngOnInit(): void {
   }
  
+editGoal(){
+  this.goaldiv= !this.goaldiv;
+}
 
 }

@@ -1,4 +1,5 @@
 <div>
+  <div *ngFor="let div of divs">
     <table class=" tblobj table table-bordered">
       <thead class="alert alert-dark">
         <tr>
@@ -44,7 +45,7 @@
               <option value="3"> Completed</option>
             </select></td>
           <td><input type="range"></td>
-          <td><i class="material-icons" style="font-size:36px; color: blue;">save</i>
+          <td><i class="material-icons iconsave" style="font-size:36px; color: blue;" (click)="savegoal()">save</i>
             <i class="material-icons" style="font-size:36px; color: red;">close</i>
           </td>
           <td>
@@ -53,8 +54,11 @@
         </tr>
       </tbody>
     </table>
-    <div class="card">
+    <div class="card" *ngIf="saveGoal">
       <span class="checkins">Check-ins >></span>
+      <button class="btnclose" (click)="closeCheckins()">
+        <i class="material-icons closeicon" style="font-size:30px; color: grey;">close</i>
+      </button>
       <div class="container">
         <table class="table table-bordered tbldata">
           <thead class="alert alert-dark">
@@ -83,7 +87,7 @@
               <td><textarea disabled="true"></textarea></td>
               <td><textarea></textarea></td>
               <td><input type="range"></td>
-  
+
             </tr>
             <tr>
               <td>2</td>
@@ -105,7 +109,8 @@
         <button class="btncancle btn btn-cancel">Cancle</button>
       </div>
     </div>
-    <button class=" btn btn-primary btnadd" click="">
-      <i class="material-icons " style=" color:white;">add</i>
-      Add Objective</button>
   </div>
+  <button class=" btn btn-primary btnadd" (click)=" add()">
+    <i class="material-icons " style=" color:white;">add</i>
+    Add Objective</button>
+</div>
