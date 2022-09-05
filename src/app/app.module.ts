@@ -8,8 +8,7 @@ import { GoalComponent } from './TeamReview/goal/goal.component';
 import { ObjectiveComponent } from './TeamReview/objective/objective.component';
 import { TeamReviewComponent } from './TeamReview/team-review/team-review.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],

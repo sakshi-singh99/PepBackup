@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl,FormGroup,Validators} from '@angular/forms'
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-objective',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./objective.component.css']
 })
 export class ObjectiveComponent implements OnInit {
+  objective:any;
   saveGoal:boolean=true;
   close:boolean=true;
   divs: any[] = [];
@@ -24,6 +27,8 @@ export class ObjectiveComponent implements OnInit {
     this.divs.push(this.divs.length);
     this.saveGoal=false;
   }
-
-  
+ 
+  onSubmit() {
+    console.log('it is working');
+  }
 }
